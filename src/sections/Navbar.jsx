@@ -8,19 +8,19 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   // to give sticky menu another color when scrolling
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      setScrolled(isScrolled);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const isScrolled = window.scrollY > 0;
+  //     setScrolled(isScrolled);
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
-  const navbarClass = scrolled ? 'bg-[#000000] ' : 'bg-transparent';
+  // const navbarClass = scrolled ? 'bg-[#000000] ' : 'bg-transparent';
 
 //to open and close the menu in mobile
   const handleNav = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
 
-    <div class={nav ? `${navbarClass} bg-transparent lg:pb-2 mx-auto` : `bg-transparent mx-auto`}>
+    <div class={nav ? "bg-transparent lg:pb-2 mx-auto" : "bg-transparent mx-auto"}>
     <div class="px-4 md:px-8 w-full">
       <header class="flex items-center justify-between py-4 md:py-4 w-full">
         {/* <!-- logo - start --> */}

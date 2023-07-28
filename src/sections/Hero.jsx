@@ -10,7 +10,7 @@ const Hero = () => {
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }}>
-      <div className="fixed z-40 w-full top-0">
+      <div>
       <Navbar />
       </div>
       

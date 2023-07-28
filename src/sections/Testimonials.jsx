@@ -5,7 +5,7 @@ import jennie from "../images/image-jennie.jpg"
 import thomas from "../images/image-thomas.jpg"
 const Testimonials = () => {
   return (
-    <div className='bg-white p-32  mx-auto '>
+    <div className='bg-white lg:p-32 p-8  mx-auto '>
 {/* the div to hold the 3 cards */}
 <h1 className='text-center font-fraunces font-bold text-xl tracking-[10px] text-dark-gray-blue mb-24'>
       CLIENT TESTIMONIALS
